@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "name": "invoice_number",
+      "match": "Invoice Number: (\\d+)",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "match": "Date: (\\d{4}-\\d{2}-\\d{2})",
+      "type": "date"
+    },
+    {
+      "name": "total_amount",
+      "match": "Total: \\$(\\d+\\.\\d{2})",
+      "type": "float"
+    }
+  ]
+}
