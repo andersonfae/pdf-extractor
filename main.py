@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 import tempfile
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders.pdf import PyPDFLoader
 from extractor import load_config, extract_data_regex, extract_data_with_langchain, validate_data
 
 st.title("PDF-to-Structured-JSON Extractor")
